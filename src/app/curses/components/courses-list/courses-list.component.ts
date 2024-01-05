@@ -2,12 +2,18 @@ import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core
 import { Courses } from '../../model/courses';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatPaginator } from '@angular/material/paginator';
+import { CategoryPipe } from '../../../shared/pipes/category.pipe';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 
 @Component({
-  selector: 'app-courses-list',
-  templateUrl: './courses-list.component.html',
-  styleUrl: './courses-list.component.css'
+    selector: 'app-courses-list',
+    templateUrl: './courses-list.component.html',
+    styleUrl: './courses-list.component.css',
+    standalone: true,
+    imports: [MatTableModule, MatIconModule, MatButtonModule, CategoryPipe]
 })
 export class CoursesListComponent {
 

@@ -23,30 +23,27 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
-  declarations: [
-    CursesComponent,
-    CourseFormComponent,
-    CoursesListComponent
-  ],
-  imports: [
-    CommonModule,
-    CursesRoutingModule,
-    MatTableModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatProgressSpinnerModule,
-    HttpClientModule,
-    SharedModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatSnackBarModule,
-    MatCheckboxModule,
-    MatPaginatorModule
-    
-  ]
+    imports: [
+        CommonModule,
+        CursesRoutingModule,
+        MatTableModule,
+        MatCardModule,
+        MatToolbarModule,
+        MatProgressSpinnerModule,
+        HttpClientModule,
+        SharedModule,
+        MatIconModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatSelectModule,
+        MatSnackBarModule,
+        MatCheckboxModule,
+        MatPaginatorModule,
+        CursesComponent,
+        CourseFormComponent,
+        CoursesListComponent
+    ]
 })
 export class CursesModule { }
