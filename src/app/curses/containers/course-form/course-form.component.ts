@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormControlName, FormGroup, NonNullableFormBuilder, UntypedFormArray, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CoursesService } from '../../services/courses.service';
-import { Location, NgIf, NgFor } from '@angular/common';
+import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Courses } from '../../model/courses';
 import { Lesson } from '../../model/lesson';
@@ -21,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
     templateUrl: './course-form.component.html',
     styleUrl: './course-form.component.css',
     standalone: true,
-    imports: [MatCardModule, MatToolbarModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, NgIf, MatSelectModule, MatOptionModule, MatButtonModule, MatIconModule, NgFor, MatCheckboxModule]
+    imports: [MatCardModule, MatToolbarModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatButtonModule, MatIconModule, MatCheckboxModule]
 })
 export class CourseFormComponent implements OnInit {
 
