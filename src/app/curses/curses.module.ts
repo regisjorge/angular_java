@@ -8,7 +8,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
-import { SharedModule } from '../shared/shared.module';
+
 import {MatIconModule} from '@angular/material/icon';
 import { CourseFormComponent } from './containers/course-form/course-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -24,26 +24,25 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
     imports: [
-        CommonModule,
-        CursesRoutingModule,
-        MatTableModule,
-        MatCardModule,
-        MatToolbarModule,
-        MatProgressSpinnerModule,
-        HttpClientModule,
-        SharedModule,
-        MatIconModule,
-        ReactiveFormsModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatButtonModule,
-        MatSelectModule,
-        MatSnackBarModule,
-        MatCheckboxModule,
-        MatPaginatorModule,
-        CursesComponent,
-        CourseFormComponent,
-        CoursesListComponent
-    ]
+    CommonModule,
+    CursesRoutingModule,
+    MatTableModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatProgressSpinnerModule,
+    HttpClientModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    MatCheckboxModule,
+    MatPaginatorModule,
+    CursesComponent,
+    CourseFormComponent,
+    CoursesListComponent
+]
 })
 export class CursesModule { }
